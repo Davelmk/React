@@ -1,0 +1,54 @@
+.App {
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 480px;
+  height: 420px;
+}
+.Div_Result{
+  width: fit-content;
+  height: 70px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:cornflowerblue;
+  border-radius: 10px;
+  font-size: xx-large;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Div_Button{
+  margin-top: 10px;
+  width: fit-content;
+  height: 420px;
+  background-color: aliceblue;
+}
+.AC_Button{
+  width: 80px;
+  height: 50px;
+  background-color: RGB(209,209,209);
+  font-size: x-large;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.Res_Button{
+  width: 200px;
+  height: 50px;
+  background-color: RGB(209,209,209);
+  font-size: x-large;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.Button{
+  width: 80px;
+  height: 50px;
+  background-color: RGB(209,209,209);
+  margin: 20px;
+  font-size: x-large;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
