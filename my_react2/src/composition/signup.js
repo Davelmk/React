@@ -1,0 +1,54 @@
+import React,{Component} from 'react';
+import './style.css';
+
+//props.children获取标签体内“子组件集合”
+//props.tag tag可作为标签属性，可定义为“组件”
+function FancyBorder(props) {
+    return (
+      <div className={'FancyBorder FancyBorder-' + props.color}>
+        {props.children}
+      </div>
+    );
+}
+function Dialog(props){
+    return(
+        <FancyBorder color="blue">
+            <h1 className="Dialog-title">
+                {props.title}
+            </h1>
+            <p className="Dialog-message">
+                {props.message}
+            </p>
+            {props.children}
+        </FancyBorder>
+    );
+}
+class SignUpDialog extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            login:''
+        }
+        this.handleChange=this.handleChange.bind(this);
+        this.handleSignUp=this.handleSignUp.bind(this);
+    }
+    handleChange(event){
+        this.setState({login:event.target.value});
+    }
+    handleSignUp(){
+        alert(`Welcome aboard, ${this.state.login}!`);
+    }
+    render(){
+        return(
+            <Dialog 
+                title="Mars Exploration Program"
+                message="How should we refer to you?">
+                <input value={this.state.login} onChange={this.handleChange}/>
+                <button onClick={this.handleSignUp}>
+                    Sign me Up!
+                </button>
+            </Dialog>
+        );
+    }
+}
+export default SignUpDialog;

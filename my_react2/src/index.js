@@ -12,7 +12,10 @@ import registerServiceWorker from './registerServiceWorker';
 // import Select from './forms/select';
 // import FileInput from './forms/fileInput';
 // import Reservation from './forms/reservation';
-import Temperature from './state/temperature';
+// import Temperature from './state/temperature';
+// import Dialog from './composition/dialog';
+// import SplitPanel from './composition/splitpanel';
+import SignUp from './composition/signup';
 
 
 ReactDOM.render(
@@ -26,7 +29,10 @@ ReactDOM.render(
     // <Select/>,
     // <FileInput/>,
     // <Reservation/>,
-    <Temperature/>,
+    // <Temperature/>,
+    // <Dialog/>,
+    // <SplitPanel/>,
+    <SignUp/>,
     document.getElementById('root')
 );
 registerServiceWorker();
