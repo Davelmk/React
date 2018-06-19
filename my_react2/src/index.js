@@ -10,7 +10,9 @@ import registerServiceWorker from './registerServiceWorker';
 // import Form from './forms/form'
 // import TextForm from './forms/textForm';
 // import Select from './forms/select';
-import FileInput from './forms/fileInput';
+// import FileInput from './forms/fileInput';
+// import Reservation from './forms/reservation';
+import Temperature from './state/temperature';
 
 
 ReactDOM.render(
@@ -22,7 +24,9 @@ ReactDOM.render(
     // <Form/>,
     // <TextForm/>,
     // <Select/>,
-    <FileInput/>,
+    // <FileInput/>,
+    // <Reservation/>,
+    <Temperature/>,
     document.getElementById('root')
 );
 registerServiceWorker();
