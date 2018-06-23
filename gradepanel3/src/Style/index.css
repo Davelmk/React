@@ -1,0 +1,24 @@
+.inputStyle{
+    margin-left: 10px;
+    margin-right: 10px;
+    outline:none;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 10px;
+    font-size: 18px;
+    border-color: red;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+.not-found{
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid #BBADA0;
+    width: 480px;
+    border-radius: 10px;
+    padding: 20px;
+}
